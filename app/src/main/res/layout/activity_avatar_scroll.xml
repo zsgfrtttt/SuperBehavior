@@ -53,10 +53,10 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_margin="16dp"
-        android:src="@mipmap/tom"
-        app:border_color="@android:color/white"
-        app:border_width="1dp"
+        android:src="@mipmap/b"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="1dp"
         app:layout_anchor="@id/collapsing_tool_bar"
         app:layout_anchorGravity="bottom|right"
-        app:layout_behavior="com.dl7.coordinator.behavior.AvatarBehavior"/>
+        app:layout_behavior="@string/behavior_avater"/>
 </android.support.design.widget.CoordinatorLayout>

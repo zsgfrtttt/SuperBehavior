@@ -12,4 +12,7 @@
 
     <!--fab-->
     <string name="behavior_fab_scroll">com.hydbest.behavior.fab.ScrollAwareFABBehavior</string>
+
+    <!--avater-->
+    <string name="behavior_avater">com.hydbest.behavior.avatar.AvatarBehavior</string>
 </resources>
