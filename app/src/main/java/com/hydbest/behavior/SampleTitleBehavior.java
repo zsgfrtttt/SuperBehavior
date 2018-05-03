@@ -32,8 +32,9 @@ public class SampleTitleBehavior extends CoordinatorLayout.Behavior<View>{
         float dy = dependency.getY() - child.getHeight();
         dy = dy < 0 ? 0 : dy;
         float y = -(dy / deltaY) * child.getHeight();
+        float alpha = 1- dy/deltaY;
         child.setTranslationY(y);
-        Log.i("csz",""+dependency.getY());
+        child.setAlpha(alpha);
         return true;
     }
 }

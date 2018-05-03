@@ -48,4 +48,13 @@
         android:textSize="18sp"
         app:layout_behavior="@string/behavior_sample_title" />
 
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        app:backgroundTintMode="multiply"
+        app:layout_behavior="@string/behavior_fab_scroll"
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom|right"/>
+
 </android.support.design.widget.CoordinatorLayout>

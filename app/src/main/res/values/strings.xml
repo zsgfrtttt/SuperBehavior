@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Behavior</string>
     <string name="behavior_sample_title">com.hydbest.behavior.SampleTitleBehavior</string>
+    <string name="behavior_recycle">com.hydbest.behavior.RecycleBehavior</string>
+    <string name="behavior_textview">com.hydbest.behavior.TextViewBehavior</string>
+
+    <!--uc-->
+    <string name="behavior_ucview_title">com.hydbest.behavior.uc.UCViewTitleBehavior</string>
+    <string name="behavior_ucview_header">com.hydbest.behavior.uc.UCViewHeaderBehavior</string>
+    <string name="behavior_ucview_tab">com.hydbest.behavior.uc.UCViewTabBehavior</string>
+    <string name="behavior_ucview_content">com.hydbest.behavior.uc.UCViewContentBehavior</string>
+
+    <!--fab-->
+    <string name="behavior_fab_scroll">com.hydbest.behavior.fab.ScrollAwareFABBehavior</string>
 </resources>

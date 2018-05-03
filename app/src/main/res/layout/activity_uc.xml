@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/news_view_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        app:layout_behavior="@string/behavior_ucview_title">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="UC头条"
+            android:textColor="@android:color/white"
+            android:paddingLeft="5dp"/>
+    </FrameLayout>
+
+    <!-- 此FrameLayout对应UCViewHeader,下面布局UCViewHeader的也支持滑动 -->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/news_view_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/behavior_ucview_header">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center"
+                android:text="ICON导航区"/>
+
+        </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <!-- 此FrameLayout对应UCViewHeader,下面布局UCViewHeader的不支持滑动 -->
+    <!--<FrameLayout
+        android:id="@+id/news_view_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/behavior_ucview_header">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:text="ICON导航区"/>
+    </FrameLayout>-->
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:tabBackground="@color/colorPrimary"
+        app:tabTextColor="@android:color/white"
+        app:tabIndicatorColor="@android:color/white"
+        app:layout_behavior="@string/behavior_ucview_tab"
+        app:tabGravity="fill"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/behavior_ucview_content"
+        android:background="@android:color/white"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        app:backgroundTintMode="multiply"
+        app:layout_behavior="@string/behavior_fab_scroll"
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom|right"/>
+</android.support.design.widget.CoordinatorLayout>

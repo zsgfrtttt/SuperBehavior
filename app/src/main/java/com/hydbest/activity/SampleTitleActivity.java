@@ -1,14 +1,14 @@
-package com.hydbest.behavior;
+package com.hydbest.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.hydbest.Adapter.TextAdapter;
 import com.hydbest.BaseActivity;
+import com.hydbest.behavior.R;
 
-public class MainActivity extends BaseActivity {
+public class SampleTitleActivity extends BaseActivity {
     RecyclerView recyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
