@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Behavior</string>
+    <string name="behavior_sample_title">com.hydbest.behavior.SampleTitleBehavior</string>
+</resources>
