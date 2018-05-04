@@ -6,4 +6,5 @@
     <dimen name="avatar_final_size">40dp</dimen>
     <dimen name="avatar_final_x">8dp</dimen>
     <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="header_height">200dp</dimen>
 </resources>

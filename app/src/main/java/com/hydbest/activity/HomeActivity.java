@@ -19,7 +19,9 @@ import java.util.Arrays;
  */
 
 public class HomeActivity extends BaseActivity {
-    private Class<Activity>[] mList = new Class[]{SampleTitleActivity.class,ScrollActivity.class,UCActivity.class,AvatarScollActivity.class};
+    private Class<Activity>[] mList = new Class[]{SampleTitleActivity.class,ScrollActivity.class,
+            UCActivity.class,AvatarScollActivity.class,BottomSheetActivity.class,
+            SwipeDismissActivity.class,CoverHeaderActivity.class};
     RecyclerView recyclerView;
 
     @Override

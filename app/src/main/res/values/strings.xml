@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Behavior</string>
+    <string name="large_text">4,自定义Behavior 上面讲了Google 为我们提供的一些场景使用的Behavior,当然还有一些Google 提供的一些组件使用的Behavior,AppbarLayout内部的Behavior,如专门协调 AppbarLayout 与可滚动View（NestedScrollView,RecyclerView  ）的, FloatActionButton内部的Behavior ,协调和Snackbar 的关系，保证Snackbar 弹出的时候不被FAB 遮挡。还有就是上面说的Snackbar内部的Behavior 等等。但是有时候，要实现多个View之间的的交互时，我们可以自定义Behavior ，下面就说说怎么自定义一个Behavior。 自定义Behavior 最关键的就是文章第一部分介绍的Behavior 提供的那一些方法，忘了的请到回去看一下第一部分的方法注释。自定义Behavior 分为两种：  第一种是通过监听一个View的状态，如位置、大小的变化，来改变其他View的行为，这种只需要重写2个方法就可以了，分别是layoutDependsOn 和onDependentViewChanged, layoutDependsOn方法判断是指定依赖的View时，返回true,然后在onDependentViewChanged 里，被依赖的View做需要的行为动作。   第二种就是重写onStartNestedScroll、onNestedPreScroll、onNestedScroll等一系列方法，前面第一步分已经讲过。  上面两种方法相比，第一种很简单，第二种复杂一些，但是第二种实现的效果也要复杂。下面就以开眼首页的滑动Header效果为例，来实现一个自定义的Behavior。开眼首页滑动header效果如下：  作者：依然饭特稀西 链接：https://juejin.im/post/585bb76961ff4b006cc9d5b6 来源：掘金 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</string>
+
     <string name="behavior_sample_title">com.hydbest.behavior.SampleTitleBehavior</string>
     <string name="behavior_recycle">com.hydbest.behavior.RecycleBehavior</string>
     <string name="behavior_textview">com.hydbest.behavior.TextViewBehavior</string>
@@ -15,4 +17,8 @@
 
     <!--avater-->
     <string name="behavior_avater">com.hydbest.behavior.avatar.AvatarBehavior</string>
+
+    <!--header-->
+    <string name="behavior_header">com.hydbest.behavior.header.HeaderBehavior</string>
+
 </resources>

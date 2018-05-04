@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 
 /**
- * Created by Rukey7 on 2016/7/9.
+ * Created by csz on 2016/7/9.
  */
 public class AnimHelper {
 
