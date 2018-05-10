@@ -19,13 +19,14 @@ import java.util.Arrays;
  */
 
 public class HomeActivity extends BaseActivity {
+    RecyclerView recyclerView;
     private Class<Activity>[] mList = new Class[]{SampleTitleActivity.class,ScrollActivity.class,
             UCActivity.class,AvatarScollActivity.class,BottomSheetActivity.class,
             SwipeDismissActivity.class,CoverHeaderActivity.class};
-    RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //测试  回退
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BaseQuickAdapter adapter = new HomeAdapter(Arrays.asList(mList));

@@ -30,6 +30,7 @@ public class SwipeDismissActivity extends BaseActivity{
         SwipeDismissBehavior swipe = new SwipeDismissBehavior();
 
         /**
+         *
          * //设置滑动的方向，有3个值
          * 1，SWIPE_DIRECTION_ANY 表示向左像右滑动都可以，
          * 2，SWIPE_DIRECTION_START_TO_END，只能从左向右滑

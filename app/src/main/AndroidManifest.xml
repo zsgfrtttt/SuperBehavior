@@ -17,6 +17,7 @@
         <activity android:name="com.hydbest.activity.BottomSheetActivity"></activity>
         <activity android:name="com.hydbest.activity.SwipeDismissActivity"></activity>
         <activity android:name="com.hydbest.activity.CoverHeaderActivity"></activity>
+        <activity android:name="com.hydbest.activity.NdkActivity"></activity>
         <activity android:name="com.hydbest.activity.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

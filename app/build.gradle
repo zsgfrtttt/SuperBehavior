@@ -9,6 +9,15 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk{
+            moduleName "native"
+            abiFilters  "armeabi-v7a", "x86"
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'src/main/jni'//告知jni源码目录
+        }
     }
     buildTypes {
         release {
