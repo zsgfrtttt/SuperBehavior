@@ -27,6 +27,7 @@ public class HomeActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //测试  回退
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BaseQuickAdapter adapter = new HomeAdapter(Arrays.asList(mList));
